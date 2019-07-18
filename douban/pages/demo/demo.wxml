@@ -1,0 +1,62 @@
+<!-- 搜索框 -->
+<view class='search'>
+	<input type='text' placeholder='搜 索' value="{{inputValue}}"></input>
+</view>
+
+<!-- 影院热映 -->
+<view class="Cinema">
+    <text>影院热映</text>
+	<navigator url="../gengduo_yyry/gengduo_yyry">查看更多 ></navigator>
+</view>
+<scroll-view scroll-x="true">
+  <view class="uploadWrap" scroll-x="true">
+    <view class="upload_Item" wx:for="{{subjects}}" wx:key="id">
+      <!-- navigator：页面跳转链接 -->
+      <navigator url="../xsk/xsk" hover-class="none">
+        <image class="upload_Item_img" src="{{item.images.large}}"></image>
+        <view id='title'>{{item.title}}</view>
+		<!-- 星星评分 -->
+		<view id='xing'><van-rate readonly size="{{ 10 }}" value="3" /></view>
+      </navigator>
+    </view>
+  </view>
+</scroll-view>
+
+<!-- 豆瓣热门 -->
+<view class="Cinema">
+    <text>豆瓣热门</text>
+	<navigator url='../gengduo_rm/gengduo_rm'>查看更多 ></navigator>
+</view>
+<scroll-view scroll-x="true">
+  <view class="uploadWrap" scroll-x="true">
+    <view class="upload_Item" wx:for="{{subjects_top250}}" wx:key="id">
+      <!-- navigator：页面跳转链接 -->
+      <navigator url='../xsk/xsk' hover-class="none">
+        <image class="upload_Item_img" src="{{item.images.large}}"></image>
+        <view id='title'>{{item.title}}</view>
+		<!-- 星星评分 -->
+		<view id='xing'><van-rate readonly size="{{ 10 }}" value="5" /></view>
+      </navigator>
+    </view>
+  </view>
+</scroll-view>
+
+
+<!-- 即将上映 -->
+<view class="Cinema">
+    <text>即将上映</text>
+	<navigator url='../gengduo_sy/gengduo_sy'>查看更多 ></navigator>
+</view>
+<scroll-view scroll-x="true">
+  <view class="uploadWrap" scroll-x="true">
+    <view class="upload_Item" wx:for="{{coming_soon}}" wx:key="id">
+      <!-- navigator：页面跳转链接 -->
+      <navigator url='../xsk/xsk' hover-class="none">
+        <image class="upload_Item_img" src="{{item.images.large}}"></image>
+        <view id='title'>{{item.title}}</view>
+		<!-- 星星评分 -->
+		<view id='xing'><van-rate readonly size="{{ 10 }}" value="2" /></view>
+      </navigator>
+    </view>
+  </view>
+</scroll-view>

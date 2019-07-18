@@ -1,0 +1,21 @@
+<view class="top">
+    <view class="top_b">
+        <image src="../../img/2018bj.jpg"></image>
+    </view>
+</view>
+
+<view class="fenlei">2018分类榜单</view>
+
+<view class="lb">
+    <view><image src="../../img/xjp.png"></image></view>
+    <view><image src="../../img/xjp.png"></image></view>
+    <view><image src="../../img/xjp.png"></image></view>
+    <view><image src="../../img/xjp.png"></image></view>
+    <view><image src="../../img/xjp.png"></image></view>
+    <view><image src="../../img/xjp.png"></image></view>
+    <view><image src="../../img/xjp.png"></image></view>
+    <view><image src="../../img/xjp.png"></image></view>
+    <view><image src="../../img/xjp.png"></image></view>
+    <view><image src="../../img/xjp.png"></image></view>
+</view>
+

@@ -1,0 +1,51 @@
+{
+  "pages": [
+	"pages/demo/demo",
+	"pages/pingfen/pingfen",
+	"pages/2018/2018",
+	"pages/bangdan/bangdan",
+	"pages/top250/top250",
+	"pages/xsk/xsk",
+	"pages/me/me",
+	"pages/index/index",
+    "pages/logs/logs",
+	"pages/gengduo_yyry/gengduo_yyry",
+	"pages/gengduo_rm/gengduo_rm",
+	"pages/gengduo_sy/gengduo_sy"
+  ],
+  "window": {
+    "backgroundTextStyle": "light",
+    "navigationBarBackgroundColor": "#42bd55",
+    "navigationBarTitleText": "WeChat",
+    "navigationBarTextStyle": "black"
+  },
+	"tabBar": {
+		"list": [
+			{
+				"pagePath": "pages/demo/demo",
+				"text": "首页",
+				"iconPath":"img/shouye.png",
+				"selectedIconPath":"img/shouye1.png"
+			},
+			{
+				"pagePath": "pages/bangdan/bangdan",
+				"text": "榜单",
+				"iconPath": "img/shipin.png",
+				"selectedIconPath": "img/shipin1.png"
+			},
+			{
+				"pagePath": "pages/me/me",
+				"text": "我的",
+				"iconPath": "img/wode.png",
+				"selectedIconPath": "img/wode1.png"
+			}
+		]
+	},
+  "sitemapLocation": "sitemap.json",
+  "usingComponents": {
+	"van-button": "utils/dist/button/index",
+	"van-rate": "utils/dist/rate/index",
+	"van-icon": "utils/dist/icon/index",
+	"van-slider": "utils/dist/slider/index"
+}
+}

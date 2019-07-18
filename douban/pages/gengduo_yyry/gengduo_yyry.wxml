@@ -1,0 +1,9 @@
+<view class='upload'> 
+	<view class="upload_Item" wx:for="{{subjects}}" wx:key="id">
+		<!-- navigator：页面跳转链接 -->
+		<navigator url='../index/index' hover-class="none">
+			<image class="upload_Item_img" src="{{item.images.large}}"></image>
+			<text>{{item.title}}</text>
+		</navigator>
+	</view>
+</view>

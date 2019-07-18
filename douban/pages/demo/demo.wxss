@@ -1,0 +1,68 @@
+/* 搜索框 */
+.search{
+	background-color: #42bd55;
+	padding-bottom: 20rpx;
+	width: 100%;
+}
+.search input{
+	text-align: center;
+	width: 90%;
+	height: 65rpx;
+	margin: 0 auto;
+	font-size: 30rpx;
+	border-radius: 3rpx;
+	background-color: #fff;
+}
+/* 影院热映 */
+.Cinema{
+  float: left;
+  width: 100%;
+  margin: 30rpx auto 0;
+  font-family: "黑体";
+  line-height: 33rpx;
+}
+.Cinema text:nth-child(1){
+  margin-left: 3%;
+  font-size: 33rpx;
+}
+.Cinema navigator{
+  float: right;
+  color: #42bd55;
+  margin-right: 3%;
+  font-size: 33rpx;
+}
+/* 图片滑动 */
+.uploadWrap {
+  float: left;
+  display: flex;
+  flex-direction: row;
+  margin-top: 30rpx;
+  width: 100%;
+  height: 330rpx;
+}
+.upload_Item {
+  float: left;
+  width: 200rpx;
+  height: 330rpx;
+  line-height: 40rpx;
+  text-align: center;
+}
+.upload_Item_img {
+  float: left;
+  width: 170rpx;
+  height: 250rpx;
+  margin: 0 0 0 20rpx;
+  border-radius: 10rpx;
+}
+.upload_Item #title{
+  white-space:nowrap;
+  overflow:hidden;
+  text-overflow:ellipsis;
+  font-size: 26rpx; 
+  text-align: center;
+  margin-left: 20rpx;
+  width: 170rpx;
+}
+.upload_Item #xing{
+	margin-left: 20rpx;
+}

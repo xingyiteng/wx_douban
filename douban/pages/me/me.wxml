@@ -1,0 +1,96 @@
+<view class='login' style='background:url(../../img/beijing.png);background-size:100%'>
+	<button>登录</button>
+</view>
+
+<view class='content'> 
+	<view class='con_top'>
+		<text>我的书影音</text><navigator>登录查看 ></navigator>
+	</view>
+
+	<view class='con_c'>
+		<navigator>
+			<view class='con_l'>
+				<van-icon name="live" />
+			</view>
+			<view class='con_r'>
+				<view class='con_r_l'>
+					<view>
+					观影分析
+					</view>
+					<view>
+					0 看过
+					</view>
+				</view>
+
+				<view class='con_r_r'>
+					<view>
+					标记10部影片开启观影分析
+					</view>
+					<view>
+					立即开启
+					</view>
+					<text>></text>
+				</view>
+			</view>
+		</navigator>
+	</view>
+
+	<view class='con_c'>
+		<navigator>
+			<view class='con_l'>
+				<van-icon name="live" />
+			</view>
+			<view class='con_r'>
+				<view class='con_r_l'>
+					<view>
+					观影分析
+					</view>
+					<view>
+					0 看过
+					</view>
+				</view>
+
+				<view class='con_r_r'>
+					<view>
+					标记10部影片开启观影分析
+					</view>
+					<view>
+					立即开启
+					</view>
+					<text>></text>
+				</view>
+			</view>
+		</navigator>
+	</view>
+
+	<view class='con_c'>
+		<navigator>
+			<view class='con_l'>
+				<van-icon name="live" />
+			</view>
+			<view class='con_r'>
+				<view class='con_r_l'>
+					<view>
+					观影分析
+					</view>
+					<view>
+					0 看过
+					</view>
+				</view>
+
+				<view class='con_r_r'>
+					<view>
+					标记10部影片开启观影分析
+					</view>
+					<view>
+					立即开启
+					</view>
+					<text>></text>
+				</view>
+			</view>
+		</navigator>
+	</view>
+</view>
+
+
+

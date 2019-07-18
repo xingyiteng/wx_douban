@@ -1,0 +1,47 @@
+<view class='top'>
+<image src='../../img/top250bj.jpg'></image>
+</view>
+
+<view class='content'>
+	<view class='con_top'>
+		<view>
+			<text>看过0部/</text>
+			<text>共250部</text>
+		</view>
+		<button>登录查看成就</button>
+	</view>
+
+	<view class="con_con" wx:for="{{subjects}}" wx:key>
+		<view class='con_con_top'>No.{{index+1}}</view>
+
+		<navigator url="../xsk/xsk">
+			<view class='con_con_b'> 
+				<view class='b_l'>
+					<image src="{{item.images.large}}"></image>
+				</view>
+
+				<view class='b_r'>
+					<view class='r_l'>
+						<view id='title'>{{item.title}}</view>
+						<van-rate readonly size="{{1}}" value="5" />
+						<text>{{item.rating.average}}</text>
+						<view id='con'>{{item.pubdates[1]}}/{{item.genres[0]}}/{{item.genres[1]}}/{{item.directors[0].name}}/{{item.casts[0].name}}/{{item.casts[1].name}}/{{item.casts[2].name}}</view>
+					</view>
+
+					<view class='r_r'>
+						<view id="rr">
+							<van-rate value="{{ 1 }}" readonly size="{{ 16 }}" count="{{ 1 }}"/>
+							<view>看过</view>
+						</view>
+					</view>
+				</view>
+			</view>
+
+			<view class='con_b'>
+			
+			</view>
+
+		</navigator>
+	</view>
+
+</view>

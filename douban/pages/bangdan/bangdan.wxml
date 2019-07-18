@@ -1,0 +1,96 @@
+<view class='first'>
+	<navigator url='../2018/2018'>
+		<image src='../../img/1.jpg'></image>
+	</navigator>
+	<navigator url='../pingfen/pingfen'>
+		<image src='../../img/2.jpg'></image>
+	</navigator>
+	<navigator url=''>
+		<image src='../../img/3.jpg'></image>
+	</navigator>
+</view>
+
+
+<view class='content'>
+	<view class='con_l'>
+	<image src='../../img/dzp.png'></image>
+	</view>
+	<!-- 只循环前三条数据 -->
+	<view class='list'>
+		<view wx:for="{{subjects}}" wx:key wx:if="{{index<3}}">
+				<navigator url='../top250/top250'>{{index+1}}.{{item.title}} <text>{{item.rating.average}}分</text></navigator>
+		</view>
+	</view>
+</view>
+
+<view class='content'>
+	<view class='con_l'>
+	<image src='../../img/hydy.png'></image>
+	</view>
+	<!-- 只循环前三条数据 -->
+	<view class='list'>
+		<view wx:for="{{subjects}}" wx:key wx:if="{{index<3}}">
+				<navigator>{{index+1}}.{{item.title}} <text>{{item.rating.average}}分</text></navigator>
+		</view>
+	</view>
+</view>
+
+<view class='content'>
+	<view class='con_l'>
+	<image src='../../img/khp.png'></image>
+	</view>
+	<!-- 只循环前三条数据 -->
+	<view class='list'>
+		<view wx:for="{{subjects}}" wx:key wx:if="{{index<3}}">
+				<navigator>{{index+1}}.{{item.title}} <text>{{item.rating.average}}分</text></navigator>
+		</view>
+	</view>
+</view>
+
+<view class='content'>
+	<view class='con_l'>
+	<image src='../../img/lmjp.png'></image>
+	</view>
+	<!-- 只循环前三条数据 -->
+	<view class='list'>
+		<view wx:for="{{subjects}}" wx:key wx:if="{{index<3}}">
+				<navigator>{{index+1}}.{{item.title}} <text>{{item.rating.average}}分</text></navigator>
+		</view>
+	</view>
+</view>
+
+<view class='content'>
+	<view class='con_l'>
+	<image src='../../img/top250.png'></image>
+	</view>
+	<!-- 只循环前三条数据 -->
+	<view class='list'>
+		<view wx:for="{{subjects}}" wx:key wx:if="{{index<3}}">
+				<navigator>{{index+1}}.{{item.title}} <text>{{item.rating.average}}分</text></navigator>
+		</view>
+	</view>
+</view>
+
+<view class='content'>
+	<view class='con_l'>
+	<image src='../../img/xjp.png'></image>
+	</view>
+	<!-- 只循环前三条数据 -->
+	<view class='list'>
+		<view wx:for="{{subjects}}" wx:key wx:if="{{index<3}}">
+				<navigator>{{index+1}}.{{item.title}} <text>{{item.rating.average}}分</text></navigator>
+		</view>
+	</view>
+</view>
+
+<view class='content'>
+	<view class='con_l'>
+	<image src='../../img/wydy.png'></image>
+	</view>
+	<!-- 只循环前三条数据 -->
+	<view class='list'>
+		<view wx:for="{{subjects}}" wx:key wx:if="{{index<3}}">
+				<navigator>{{index+1}}.{{item.title}} <text>{{item.rating.average}}分</text></navigator>
+		</view>
+	</view>
+</view>

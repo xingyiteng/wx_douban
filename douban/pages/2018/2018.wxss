@@ -1,0 +1,27 @@
+.top{
+    width: 100%;
+    height: 1000rpx;
+}
+.top image{
+    width: 100%;
+    height: 1000rpx;
+}
+.fenlei{
+    margin-top: 30rpx;
+    text-align: center;
+}
+.lb{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+.lb view{
+    width: 45%;
+    border-radius: 15rpx;
+    margin-top: 20rpx;
+    height: 200rpx;
+}
+.lb view image{
+    width: 100%;
+    height: 200rpx;
+}

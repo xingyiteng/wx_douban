@@ -1,0 +1,46 @@
+<view class='bj' style='background:url(../../img/pfbj.jpg) no-repeat;background-size:200% 1060rpx'>
+	<view class='txt'>
+		<text>评分最高华语电影</text>
+		<text>豆瓣2018年度电影榜单</text>
+	</view>
+
+
+<view>
+	<view class='one'>
+		<view class='one_l'>
+			<image src="{{subjects.images.large}}"></image>
+		</view>
+		<view class='one_r'>
+			<view class='r_t'>{{subjects.title}}</view>
+			<view class='r_c'>
+				<text>豆瓣评分™</text>
+				<text>看过</text>
+			</view>
+			<view class='r_b'>
+				<view class='b_l'>
+					<view id='fen'>9.0</view>
+					<view><van-rate value="{{ 4.5 }}"size="{{ 8 }}"allow-half color="#f44"readonly void-color="#eee" void-icon="star"/></view>
+				</view>
+				<view class='b_r'>
+					
+				</view>
+			</view>
+		</view>
+	</view>
+	<view class='con van-multi-ellipsis--l3'>
+			{{subjects.summary}}
+	</view>
+</view>
+</view>
+
+
+<view class='list'>
+	<view class='item' wx:for="{{subjects_250}}" wx:key>
+		<image src="{{item.images.small}}"></image>
+		<view class='name'>{{item.title}}</view>
+		<van-rate value="{{ 4.5 }}"size="{{ 8 }}"allow-half color="#f44"readonly void-color="#eee" void-icon="star"/><view style='font-size: 26rpx;color:#999999;display: inline-block;'>{{item.rating.average}}</view>
+		<view class='kg'>
+			<van-icon name="star-o" color='#f44' />看过
+		</view>
+	</view>
+</view>

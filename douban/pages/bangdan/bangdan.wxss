@@ -1,0 +1,38 @@
+.first{
+	width: 90%;
+	margin: 0 auto;
+}
+.first image{
+	width: 100%;
+	margin-top: 20rpx;
+	height: 350rpx;
+	border-radius: 5rpx;
+}
+.content{
+	width: 90%;
+	height: 200rpx;
+	margin: 30rpx auto;
+	display: flex;
+}
+.content .con_l{
+	width: 200rpx;
+	height: 200rpx;
+	border-radius: 5rpx;
+}
+.content .con_l image{
+	width: 200rpx;
+	height: 200rpx;
+	border-radius: 5rpx;
+}
+.content .list{
+	padding-left: 20rpx;
+	margin-top: 20rpx;
+	flex-grow: 1;
+	height: 160rpx;
+	line-height: 55rpx;
+	font-size: 26rpx;
+	border: 1px solid rgb(185, 185, 185);
+}
+.content .list text{
+	color: rgb(255, 223, 44);
+}

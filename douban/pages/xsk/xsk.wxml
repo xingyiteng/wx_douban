@@ -1,0 +1,123 @@
+<view class='top'>
+	<view class='top_l'>
+		<image src="{{subjects[0].images.large}}"></image>
+	</view>
+
+	<view class='top_r'>
+		<view id='title'>肖申克的救赎(1994)</view>
+		<view id='english'>The Shawshank Redemption(1994)</view>
+		<view id='con'>犯罪 剧情/美国/片长142分钟</view>
+		<view id='btn'>
+			<view><van-icon name="like-o" />想看</view><view><van-icon name="star-o" />看过</view>
+		</view>
+	</view>
+</view>
+
+<view class='pf'>
+	<view class='box'>
+		<view class='box_t'><text>豆瓣评分™</text><text>></text></view>
+		<view class='box_b'>
+			<view class='b_l'>
+				<view>9.6</view>
+				<van-rate
+  readonly
+  size="{{ 8 }}"
+  value="{{ 5 }}"
+/>
+			</view>
+
+			<view class='b_r'>
+				<view class='r_l'>
+				</view>
+			</view>
+		</view>
+	</view>
+</view>
+
+<view>
+
+</view>
+
+ <view class='bj'>
+  <view id='jj'>简介</view>
+  <view id='con' class="{{qq?'van-multi-ellipsis--l3':'aa'}}">{{subjects_xq.summary}}</view>
+  <view id='zk' bindtap="tapName">{{zk}}</view>
+ </view>
+
+ <view class='bj'>
+	<view id='jj'>影人</view>
+
+	<scroll-view scroll-x> 
+	<view class='box1' scroll-x>
+	<view class='item' style='padding-left: 0rpx;'>
+		<image id='yr' src="{{subjects_xq.writers[0].avatars.small}}"></image>
+		<view id='name' class="van-ellipsis">{{subjects_xq.writers[0].name}}</view>
+		<view id='daoyan'>导演</view>
+	</view>
+	<view class='item'>
+		<image id='yr' src="{{subjects_xq.writers[1].avatars.small}}"></image>
+		<view id='name' class="van-ellipsis">{{subjects_xq.writers[1].name}}</view>
+		<view id='daoyan'>演员</view>
+	</view>
+	<view class='item'>
+		<image id='yr' src="{{subjects_xq.casts[0].avatars.small}}"></image>
+		<view id='name' class="van-ellipsis">{{subjects_xq.casts[0].name}}</view>
+		<view id='daoyan'>演员</view>
+	</view>
+	<view class='item'>
+		<image id='yr' src="{{subjects_xq.casts[1].avatars.small}}"></image>
+		<view id='name' class="van-ellipsis">{{subjects_xq.casts[1].name}}</view>
+		<view id='daoyan'>演员</view>
+	</view>
+	<view class='item'>
+		<image id='yr' src="{{subjects_xq.casts[2].avatars.small}}"></image>
+		<view id='name' class="van-ellipsis">{{subjects_xq.casts[2].name}}</view>
+		<view id='daoyan'>演员</view>
+	</view>
+	</view>
+	</scroll-view>
+ </view>
+
+ <view class='bj' style='height:500rpx'>
+	<view id='jj' class='yg'>预告片/剧照</view>
+	<scroll-view scroll-x>
+		<view style='display:flex;margin-top:20rpx;' scroll-x> 
+			<video src="{{subjects_xq.trailer_urls[0]}}"></video>
+			<image style='height: 300rpx;width:200rpx;' src="{{subjects_xq.photos[0].image}}"></image>
+		</view>
+	</scroll-view>
+ </view>
+
+ <view class='bj'>
+	<view class='dp'>
+		<view class='dp_t'>
+			<text id='jj'>短评</text><text>全部280818 ></text>
+		</view>
+
+			<view wx:for="{{subjects_dp}}" wx:key style='margin-top:40rpx;'> 
+				<view class='dp_c'>
+					<view class='c_l'>
+						<image src="{{item.author.avatar}}"></image>
+					</view>
+					<view class='c_r'>
+						<view class='r_t'>{{item.author.name}}</view>
+						<view id='xing'><van-rate readonly size="{{ 10 }}" value="5"/>
+							<text>{{item.created_at}}</text>
+						</view>
+					</view>
+
+				</view>
+
+				<view class='con'>
+					{{item.content}}
+				</view>
+
+				<view>
+					<van-icon name="thumb-circle-o" /><text style='font-size:28rpx;color:#999'>	{{item.useful_count}}</text>
+				</view>
+
+				<view style='heigth:10rpx;width:100%;backround:#999;'>
+				</view>
+			</view>
+	</view>
+ </view>
